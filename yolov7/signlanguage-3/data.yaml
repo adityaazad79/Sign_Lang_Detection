@@ -1,0 +1,37 @@
+names:
+- A
+- B
+- C
+- D
+- E
+- F
+- G
+- H
+- I
+- J
+- K
+- L
+- M
+- N
+- O
+- P
+- Q
+- R
+- S
+- T
+- U
+- V
+- W
+- X
+- Y
+- Z
+nc: 26
+roboflow:
+  license: MIT
+  project: signlanguage-hcsec
+  url: https://universe.roboflow.com/yolo-bkh56/signlanguage-hcsec/dataset/3
+  version: 3
+  workspace: yolo-bkh56
+test: ../test/images
+train: signlanguage-3/train/images
+val: signlanguage-3/valid/images
