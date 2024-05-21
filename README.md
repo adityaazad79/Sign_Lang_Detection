@@ -1,10 +1,9 @@
 # American Sign Language Detection using YOLOv7
-```markdown
 
-This project aims to detect American Sign Language (ASL) gestures using the YOLOv7 object detection model.
+- This project aims to detect American Sign Language (ASL) gestures using the YOLOv7 object detection model.
 
-The application is built using Flask for the backend and integrates with YOLOv7 for real-time and image-based ASL detection.
-```
+- The application is built using Flask for the backend and integrates with YOLOv7 for real-time and image-based ASL detection.
+
 ## Table of Contents
 - [Installation](#installation)
 - [Dataset](#dataset)
