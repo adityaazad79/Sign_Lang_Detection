@@ -1,5 +1,3 @@
-![Loading...](https://github.com/adityaazad79/IPL_Score_Predictor_with_Streamlit_Deployment/blob/main/Images/Screenshot_20230513_103444.png?raw=true)
-
 # American Sign Language Detection using YOLOv7
 ```markdown
 
