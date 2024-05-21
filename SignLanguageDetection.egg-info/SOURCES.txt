@@ -1,0 +1,9 @@
+README.md
+setup.py
+SignLanguageDetection.egg-info/PKG-INFO
+SignLanguageDetection.egg-info/SOURCES.txt
+SignLanguageDetection.egg-info/dependency_links.txt
+SignLanguageDetection.egg-info/top_level.txt
+signLanguage/__init__.py
+signLanguage/utils/__init__.py
+signLanguage/utils/main_utils.py
