@@ -75,13 +75,13 @@ The model's performance is evaluated using F1 score, precision, and confusion ma
 Test the model on the ASL test images.
 
 #### Confusion Matrix 
-![image info](Images/Confusion_Matrix.png)
+![image info](https://github.com/adityaazad79/Sign_Lang_Detection/blob/master/Images/Confusion_Matrix.png?raw=true)
 
 #### F1 Curve
-![image info](Images/F1_Curve.png)
+![image info](https://github.com/adityaazad79/Sign_Lang_Detection/blob/master/Images/F1_Curve.png?raw=true)
 
 #### PR Curve
-![image info](Images/PR_Curve.png)
+![image info](https://github.com/adityaazad79/Sign_Lang_Detection/blob/master/Images/PR_Curve.png?raw=true)
 
 
 
