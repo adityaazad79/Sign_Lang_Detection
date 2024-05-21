@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<style>
-
 		.iupload h3 {
 			color: #1b2d6b;
 			font-size: 30px;
@@ -62,9 +61,10 @@
 		}
 
 		.resp-img {
-			height: 400px;
-			width: auto;
-			margin: 0px auto;
+			height: 100%;
+			width: 100%;
+			padding: 10px;
+            object-fit: cover;
 		}
 
 		.jsonRes {
@@ -164,6 +164,11 @@
 			margin-right: 30px;
 			margin-bottom: 30px;
 		}
+
+		/* Added styles for button border radius */
+		.input-group .btn {
+			border-radius: 20px;
+		}
 	</style>
 </head>
 
@@ -210,7 +215,7 @@
       </header>
 	  
 	<form class="input-group upload-data row">	
-		<div class="col-xl-6 col-md-6 col-sm-6">
+		<div class="col-xl-6 col-md-6 col-sm-6" >
 		<button type="button" class="btn btn-primary col-12" id="uload">Upload</button>
 		</div>
 		<div class="col-xl-6 col-md-6 col-sm-6">
@@ -241,6 +246,7 @@
 		<div class="card border-0 shadow res-part2">
 		  <div class="card-body text-center">
 			<h5 class="card-title mb-0">Prediction Results</h5>
+
 		  </div>
 		</div>
 	  </div>
