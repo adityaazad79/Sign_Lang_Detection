@@ -1,8 +1,7 @@
-import sys,os
-from signLanguage.utils.main_utils import decodeImage, encodeImageIntoBase64
-from flask import Flask, request, jsonify, render_template,Response
+import os
+from flask import Flask, request, jsonify, render_template, Response
 from flask_cors import CORS, cross_origin
-
+from signLanguage.utils.main_utils import decodeImage, encodeImageIntoBase64
 
 app = Flask(__name__)
 CORS(app)
@@ -10,15 +9,12 @@ CORS(app)
 class ClientApp:
     def __init__(self):
         self.filename = "inputImage.jpg"
-        
 
 @app.route("/")
 def home():
     return render_template("index.html")
 
-
-
-@app.route("/predict", methods=['POST','GET'])
+@app.route("/predict", methods=['POST', 'GET'])
 @cross_origin()
 def predictRoute():
     try:
@@ -41,25 +37,17 @@ def predictRoute():
 
     return jsonify(result)
 
-
-
-
 @app.route("/live", methods=['GET'])
 @cross_origin()
 def predictLive():
     try:
         os.system("cd yolov7/ && python detect.py --weights best.pt --img 640 --conf 0.5 --source 0")
         os.system("rm -rf yolov7/runs")
-        return "Camera starting!!" 
+        return "Camera starting!!"
 
     except ValueError as val:
         print(val)
         return Response("Value not found inside json data")
-    
-
-
-
-
 
 if __name__ == "__main__":
     clApp = ClientApp()
